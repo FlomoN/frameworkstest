@@ -1,0 +1,15 @@
+extends: airbnb-base
+env: 
+  node: true
+  es6: true
+parser: typescript-eslint-parser
+rules: 
+  linebreak-style: 0
+  strict: 0
+  no-unused-vars: 1
+  prefer-template: 1
+  import/no-unresolved: 0
+parserOptions:
+    sourceType: module
+    ecmaFeatures: 
+      modules: true

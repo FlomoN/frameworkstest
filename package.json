@@ -1,0 +1,32 @@
+{
+  "name": "typescript_testing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm start && nyc mocha",
+    "coverage": "nyc report --reporter=html",
+    "tsc": "tsc",
+    "lint": "eslint src --ext ts",
+    "launch": "node dist/app.js",
+    "start": "npm run lint && tsc && npm run launch",
+    "doc": "typedoc --out docs --module amd src/app.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^10.12.10",
+    "chai": "^4.2.0",
+    "mocha": "^5.2.0",
+    "typescript": "^3.1.6",
+    "typescript-eslint-parser": "^21.0.1"
+  },
+  "devDependencies": {
+    "eslint": "^5.9.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "nyc": "^13.1.0",
+    "typedoc": "^0.13.0"
+  }
+}

@@ -1,0 +1,8 @@
+#Node Modules Folder
+node_modules/
+
+#Tool Outputs
+dist/
+docs/
+coverage/
+.nyc_output/
